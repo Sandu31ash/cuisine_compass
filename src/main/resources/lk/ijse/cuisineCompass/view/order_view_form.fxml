@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="690.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cuisineCompass.controller.OrderViewFormController">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="1360.0">
+         <image>
+            <Image url="@../image/Admin_Order_UI.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBackAdOrder" blendMode="MULTIPLY" layoutX="44.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnBackAdOrderOnAction" prefHeight="53.0" prefWidth="151.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TableView fx:id="tbOrderAd" blendMode="MULTIPLY" layoutX="81.0" layoutY="270.0" prefHeight="356.0" prefWidth="1214.0" style="-fx-background-radius: 25;">
+        <columns>
+          <TableColumn fx:id="colInv" prefWidth="378.0" />
+          <TableColumn fx:id="colPrice" prefWidth="259.0" />
+            <TableColumn fx:id="colQty" prefWidth="266.0" />
+            <TableColumn fx:id="colTot" prefWidth="310.0" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtDate" alignment="CENTER" blendMode="MULTIPLY" editable="false" layoutX="476.0" layoutY="118.0" prefHeight="68.0" prefWidth="211.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtOrderedBy" alignment="CENTER" blendMode="MULTIPLY" editable="false" layoutX="824.0" layoutY="118.0" prefHeight="68.0" prefWidth="167.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </TextField>
+      <JFXComboBox fx:id="cBoxCode" blendMode="MULTIPLY" focusColor="RED" focusTraversable="false" layoutX="221.0" layoutY="118.0" onAction="#cBoxCodeOnAction" prefHeight="68.0" prefWidth="159.0" promptText="          Select order here" style="-fx-background-radius: 25;" unFocusColor="WHITE" visibleRowCount="15">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <TextField fx:id="txtSupp" alignment="CENTER" blendMode="MULTIPLY" editable="false" layoutX="1109.0" layoutY="118.0" prefHeight="68.0" prefWidth="188.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

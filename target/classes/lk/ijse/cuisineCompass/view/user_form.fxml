@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="690.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cuisineCompass.controller.UserFormController">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="1360.0">
+         <image>
+            <Image url="@../image/User_UI.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBackUser" blendMode="MULTIPLY" layoutX="46.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBackUserOnAction" prefHeight="55.0" prefWidth="145.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtId" alignment="CENTER" blendMode="MULTIPLY" layoutX="229.0" layoutY="285.0" onAction="#txtIdOnAction" prefHeight="41.0" prefWidth="261.0" promptText="ex : E001" style="-fx-background-radius: 25;">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtUserName" alignment="CENTER" blendMode="MULTIPLY" layoutX="235.0" layoutY="400.0" onAction="#txtUserNameOnAction" prefHeight="41.0" prefWidth="255.0" style="-fx-background-radius: 25;">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="btnClear" blendMode="MULTIPLY" layoutX="124.0" layoutY="517.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="101.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnDelete" blendMode="MULTIPLY" layoutX="235.0" layoutY="517.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="101.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnCreate" blendMode="MULTIPLY" layoutX="199.0" layoutY="574.0" mnemonicParsing="false" onAction="#btnCreateOnAction" prefHeight="54.0" prefWidth="164.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tbUser" blendMode="MULTIPLY" layoutX="519.0" layoutY="197.0" onMouseClicked="#tbUserOnMouseClicked" prefHeight="340.0" prefWidth="789.0" style="-fx-background-radius: 25;">
+         <columns>
+            <TableColumn fx:id="colUsername" editable="false" prefWidth="195.0" style="-fx-background-radius: 25; -fx-background-colour: red;" />
+            <TableColumn fx:id="colPw" editable="false" prefWidth="198.0" style="-fx-background-radius: 25;" />
+            <TableColumn fx:id="colId" editable="false" minWidth="0.0" prefWidth="198.0" style="-fx-background-radius: 25;" />
+            <TableColumn fx:id="colJob" editable="false" minWidth="0.0" prefWidth="196.0" style="-fx-background-radius: 25;" />
+         </columns>
+      </TableView>
+      <PasswordField fx:id="txtPw" alignment="CENTER" blendMode="MULTIPLY" layoutX="232.0" layoutY="458.0" onAction="#txtPwOnAction" prefHeight="41.0" prefWidth="261.0" promptText="ex : Ash253127@$" style="-fx-background-radius: 25;">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font></PasswordField>
+      <Button fx:id="btnUpdate" blendMode="MULTIPLY" layoutX="347.0" layoutY="517.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="101.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblPw" layoutX="87.0" layoutY="493.0" prefHeight="21.0" prefWidth="389.0" textFill="RED" />
+      <Label fx:id="lblUser" layoutX="87.0" layoutY="437.0" prefHeight="21.0" prefWidth="389.0" textFill="RED" />
+      <TextField fx:id="txtJob" alignment="CENTER" blendMode="MULTIPLY" editable="false" layoutX="229.0" layoutY="345.0" onAction="#txtJobOnAction" prefHeight="35.0" prefWidth="261.0" style="-fx-background-radius: 25;">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <ImageView fx:id="pic" fitHeight="204.0" fitWidth="244.0" layoutX="168.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnUpload" blendMode="MULTIPLY" layoutX="168.0" layoutY="83.0" mnemonicParsing="false" onAction="#btnUploadOnAction" prefHeight="197.0" prefWidth="244.0" />
+   </children>
+</AnchorPane>

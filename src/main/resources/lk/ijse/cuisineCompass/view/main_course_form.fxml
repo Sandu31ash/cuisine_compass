@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="690.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cuisineCompass.controller.MainCourseFormController">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="1360.0">
+         <image>
+            <Image url="@../image/Main_Course_UI.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBackMain" blendMode="MULTIPLY" layoutX="46.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBackMainOnAction" prefHeight="55.0" prefWidth="149.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <JFXComboBox fx:id="cBoxRecipe" blendMode="MULTIPLY" focusColor="RED" focusTraversable="false" layoutX="183.0" layoutY="94.0" onAction="#cBoxRecipeOnAction" prefHeight="68.0" prefWidth="277.0" promptText="                          Select Recipe Here" style="-fx-background-radius: 25;" unFocusColor="WHITE" visibleRowCount="15">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <TextArea fx:id="txtMethod" blendMode="MULTIPLY" editable="false" layoutX="487.0" layoutY="394.0" prefHeight="230.0" prefWidth="810.0" style="-fx-background-radius: 25;" />
+      <TableView fx:id="tbRecipe" blendMode="MULTIPLY" layoutX="487.0" layoutY="150.0" prefHeight="178.0" prefWidth="810.0" style="-fx-background-radius: 25;">
+         <columns>
+            <TableColumn fx:id="colIng" prefWidth="388.0" />
+            <TableColumn fx:id="colUnit" prefWidth="209.0" />
+            <TableColumn fx:id="colQty" prefWidth="212.0" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="pic" fitHeight="396.0" fitWidth="386.0" layoutX="67.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

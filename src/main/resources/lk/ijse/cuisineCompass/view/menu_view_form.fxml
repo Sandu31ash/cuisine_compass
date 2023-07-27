@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="690.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cuisineCompass.controller.MenuViewFormController">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="1360.0">
+         <image>
+            <Image url="@../image/Supervisor_Menu.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBackSupMenu" blendMode="MULTIPLY" layoutX="43.0" layoutY="8.0" mnemonicParsing="false" onAction="#btnBackSupMenuOnAction" prefHeight="52.0" prefWidth="152.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnBreakfast" blendMode="MULTIPLY" layoutX="156.0" layoutY="67.0" mnemonicParsing="false" onAction="#btnBreakfastOnAction" prefHeight="177.0" prefWidth="281.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnLunch" blendMode="MULTIPLY" layoutX="156.0" layoutY="284.0" mnemonicParsing="false" onAction="#btnLunchOnAction" prefHeight="177.0" prefWidth="281.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnDinner" blendMode="MULTIPLY" layoutX="156.0" layoutY="505.0" mnemonicParsing="false" onAction="#btnDinnerOnAction" prefHeight="169.0" prefWidth="281.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

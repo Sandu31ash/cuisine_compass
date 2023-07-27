@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="690.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cuisineCompass.controller.AdminDashboardFormController">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="1360.0">
+         <image>
+            <Image url="@../image/Admin_Dashboard_UI.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnRecipe" blendMode="MULTIPLY" layoutX="494.0" layoutY="159.0" mnemonicParsing="false" onAction="#btnRecipeOnAction" prefHeight="196.0" prefWidth="297.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnMenu" blendMode="MULTIPLY" layoutX="506.0" layoutY="448.0" mnemonicParsing="false" onAction="#btnMenuOnAction" prefHeight="196.0" prefWidth="297.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnEmp" blendMode="MULTIPLY" layoutX="101.0" layoutY="222.0" mnemonicParsing="false" onAction="#btnEmpOnAction" prefHeight="55.0" prefWidth="297.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnUser" blendMode="MULTIPLY" layoutX="95.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnUser" prefHeight="51.0" prefWidth="297.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAdInv" blendMode="MULTIPLY" layoutX="98.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnAdInvOnAction" prefHeight="55.0" prefWidth="297.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnIng" blendMode="MULTIPLY" layoutX="97.0" layoutY="413.0" mnemonicParsing="false" onAction="#btnIngOnAction" prefHeight="55.0" prefWidth="297.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnSupAd" blendMode="MULTIPLY" layoutX="99.0" layoutY="477.0" mnemonicParsing="false" onAction="#btnSupAdOnAction" prefHeight="55.0" prefWidth="297.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnOrder" blendMode="MULTIPLY" layoutX="97.0" layoutY="541.0" mnemonicParsing="false" onAction="#btnOrderOnAction" prefHeight="55.0" prefWidth="297.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnReport" blendMode="MULTIPLY" layoutX="937.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="204.0" prefWidth="291.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnLogout" blendMode="MULTIPLY" layoutX="215.0" layoutY="122.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="29.0" prefWidth="102.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtUser" alignment="CENTER" editable="false" layoutX="207.0" layoutY="67.0" opacity="0.58" prefHeight="51.0" prefWidth="216.0" style="-fx-background-radius: 50; -fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnReportOrder" blendMode="MULTIPLY" layoutX="937.0" layoutY="413.0" mnemonicParsing="false" onAction="#btnReportOrderOnAction" prefHeight="204.0" prefWidth="291.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="picUser" fitHeight="139.0" fitWidth="130.0" layoutX="71.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

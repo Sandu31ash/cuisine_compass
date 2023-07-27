@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="690.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cuisineCompass.controller.SupDashboardFormController">
+   <children>
+      <ImageView blendMode="MULTIPLY" fitHeight="690.0" fitWidth="1360.0">
+         <image>
+            <Image url="@../image/Supervisor_Dashboard_UI.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnLogoutSup" blendMode="MULTIPLY" layoutX="215.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnLogoutSupOnAction" prefHeight="30.0" prefWidth="102.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnInvSup" blendMode="MULTIPLY" layoutX="103.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnInvSupOnAction" prefHeight="51.0" prefWidth="296.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnSupReport" blendMode="MULTIPLY" layoutX="941.0" layoutY="181.0" mnemonicParsing="false" onAction="#btnSupReportOnAction" prefHeight="198.0" prefWidth="289.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnSupOrder" blendMode="MULTIPLY" layoutX="100.0" layoutY="495.0" mnemonicParsing="false" onAction="#btnSupOrderOnAction" prefHeight="51.0" prefWidth="296.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnSup" blendMode="MULTIPLY" layoutX="100.0" layoutY="422.0" mnemonicParsing="false" onAction="#btnSupOnAction" prefHeight="51.0" prefWidth="296.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnIngSup" blendMode="MULTIPLY" layoutX="100.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnIngSupOnAction" prefHeight="51.0" prefWidth="296.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnRecipeSup" blendMode="MULTIPLY" layoutX="496.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnRecipeSupOnAction" prefHeight="198.0" prefWidth="296.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnMenuSup" blendMode="MULTIPLY" layoutX="508.0" layoutY="437.0" mnemonicParsing="false" onAction="#btnMenuSupOnAction" prefHeight="198.0" prefWidth="296.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtUser" alignment="CENTER" editable="false" layoutX="208.0" layoutY="67.0" opacity="0.58" prefHeight="51.0" prefWidth="216.0" style="-fx-background-radius: 25;">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <Button fx:id="btnOrderReport" blendMode="MULTIPLY" layoutX="941.0" layoutY="408.0" mnemonicParsing="false" onAction="#btnOrderReportOnAction" prefHeight="198.0" prefWidth="289.0" style="-fx-background-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblDate" layoutX="207.0" layoutY="555.0" prefHeight="70.0" prefWidth="119.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="picUser" fitHeight="139.0" fitWidth="130.0" layoutX="71.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+
+   </children>
+</AnchorPane>

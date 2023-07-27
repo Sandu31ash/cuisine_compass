@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="690.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cuisineCompass.controller.InventoryViewFormController">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="1360.0">
+         <image>
+            <Image url="@../image/Admin_Inventory_UI.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBackAdInv" blendMode="MULTIPLY" layoutX="44.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnBackAdInvOnAction" prefHeight="52.0" prefWidth="150.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TableView fx:id="tbInvAd" blendMode="MULTIPLY" layoutX="102.0" layoutY="168.0" prefHeight="463.0" prefWidth="1096.0" style="-fx-background-radius: 25;">
+        <columns>
+          <TableColumn fx:id="colCode" editable="false" prefWidth="170.0" />
+          <TableColumn fx:id="colDes" editable="false" minWidth="0.0" prefWidth="211.0" />
+            <TableColumn fx:id="colUnit" editable="false" minWidth="0.0" prefWidth="157.0" />
+            <TableColumn fx:id="colPar" editable="false" minWidth="0.0" prefWidth="182.0" />
+            <TableColumn fx:id="colQty" editable="false" minWidth="0.0" prefWidth="183.0" />
+            <TableColumn fx:id="colDate" editable="false" minWidth="0.0" prefWidth="191.0" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

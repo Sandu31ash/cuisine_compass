@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="690.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cuisineCompass.controller.InventoryFormController">
+   <children>
+      <ImageView blendMode="MULTIPLY" fitHeight="690.0" fitWidth="1360.0">
+         <image>
+            <Image url="@../image/Supervisor_Inventory_UI.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBackInv" blendMode="MULTIPLY" layoutX="45.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBackInvOnAction" prefHeight="54.0" prefWidth="149.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <DatePicker fx:id="datePick" blendMode="MULTIPLY" editable="false" layoutX="1070.0" layoutY="172.0" onAction="#datePickOnAction" prefHeight="54.0" prefWidth="193.0" promptText="          Select Date Here" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </DatePicker>
+      <Button fx:id="btnClear" blendMode="MULTIPLY" layoutX="858.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="36.0" prefWidth="101.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnDelete" blendMode="MULTIPLY" layoutX="969.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="36.0" prefWidth="101.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnUpdate" blendMode="MULTIPLY" layoutX="1077.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="36.0" prefWidth="107.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnSave" blendMode="MULTIPLY" layoutX="1190.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="36.0" prefWidth="101.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="45.0" layoutY="294.0" prefHeight="3.0" prefWidth="1286.0" />
+      <TableView fx:id="tbInv" blendMode="MULTIPLY" layoutX="91.0" layoutY="345.0" onMouseClicked="#tbInvOnMouseClicked" prefHeight="297.0" prefWidth="1091.0" style="-fx-background-radius: 25;">
+        <columns>
+          <TableColumn fx:id="colInv" prefWidth="167.0" />
+          <TableColumn fx:id="colDes" editable="false" prefWidth="216.0" />
+            <TableColumn fx:id="colUnit" prefWidth="116.0" />
+            <TableColumn fx:id="colPar" prefWidth="174.0" />
+            <TableColumn fx:id="colQty" prefWidth="226.0" />
+            <TableColumn fx:id="colDate" prefWidth="191.0" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtQty" alignment="CENTER" blendMode="MULTIPLY" layoutX="684.0" layoutY="172.0" onAction="#txtQtyOnAction" prefHeight="54.0" prefWidth="174.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPar" alignment="CENTER" blendMode="MULTIPLY" layoutX="239.0" layoutY="172.0" onAction="#txtParOnAction" prefHeight="54.0" prefWidth="206.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDes" alignment="CENTER" blendMode="MULTIPLY" layoutX="684.0" layoutY="101.0" onAction="#txtDesOnAction" prefHeight="54.0" prefWidth="174.0" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </TextField>
+      <JFXComboBox fx:id="cBoxUnit" blendMode="MULTIPLY" focusColor="WHITE" focusTraversable="false" layoutX="1082.0" layoutY="97.0" onAction="#cBoxUnitOnAction" prefHeight="54.0" prefWidth="181.0" promptText="            Select Unit Here" style="-fx-background-radius: 25;" unFocusColor="WHITE" visibleRowCount="15">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <TextField fx:id="txtInv" alignment="CENTER" blendMode="MULTIPLY" layoutX="269.0" layoutY="101.0" onAction="#txtInvOnAction" prefHeight="54.0" prefWidth="174.0" promptText="ex : I001" style="-fx-background-radius: 25;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
